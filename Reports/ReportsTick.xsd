@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportsTick" targetNamespace="http://tempuri.org/ReportsTick.xsd" xmlns:mstns="http://tempuri.org/ReportsTick.xsd" xmlns="http://tempuri.org/ReportsTick.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="VINATERIAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VINATERIAConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.VINATERIAConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TICKETTableAdapter" GeneratorDataComponentClassName="TICKETTableAdapter" Name="TICKET" UserDataComponentName="TICKETTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VINATERIAConnectionString (Web.config)" DbObjectName="VINATERIA.dbo.TICKET" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        VEN_CVE_UN, VEN_CANTIDAD, CLI_RFC_CLIENTES, CLI_NOMBRE, CLI_PATERNO, CLI_TELEFONO, CLI_EMAIL, ART_CVE_ARTICULOS, ART_NOMBRE, ART_DESCRIPCION, ART_VENT, total, PROV_RFC_PROVEDORES, 
+                         PROV_NOMBRE, PROV_TEL, PROV_EMAIL
+FROM            TICKET</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VEN_CVE_UN" DataSetColumn="VEN_CVE_UN" />
+              <Mapping SourceColumn="VEN_CANTIDAD" DataSetColumn="VEN_CANTIDAD" />
+              <Mapping SourceColumn="CLI_RFC_CLIENTES" DataSetColumn="CLI_RFC_CLIENTES" />
+              <Mapping SourceColumn="CLI_NOMBRE" DataSetColumn="CLI_NOMBRE" />
+              <Mapping SourceColumn="CLI_PATERNO" DataSetColumn="CLI_PATERNO" />
+              <Mapping SourceColumn="CLI_TELEFONO" DataSetColumn="CLI_TELEFONO" />
+              <Mapping SourceColumn="CLI_EMAIL" DataSetColumn="CLI_EMAIL" />
+              <Mapping SourceColumn="ART_CVE_ARTICULOS" DataSetColumn="ART_CVE_ARTICULOS" />
+              <Mapping SourceColumn="ART_NOMBRE" DataSetColumn="ART_NOMBRE" />
+              <Mapping SourceColumn="ART_DESCRIPCION" DataSetColumn="ART_DESCRIPCION" />
+              <Mapping SourceColumn="ART_VENT" DataSetColumn="ART_VENT" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="PROV_RFC_PROVEDORES" DataSetColumn="PROV_RFC_PROVEDORES" />
+              <Mapping SourceColumn="PROV_NOMBRE" DataSetColumn="PROV_NOMBRE" />
+              <Mapping SourceColumn="PROV_TEL" DataSetColumn="PROV_TEL" />
+              <Mapping SourceColumn="PROV_EMAIL" DataSetColumn="PROV_EMAIL" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportsTick" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportsTick" msprop:Generator_UserDSName="ReportsTick">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TICKET" msprop:Generator_TableClassName="TICKETDataTable" msprop:Generator_TableVarName="tableTICKET" msprop:Generator_TablePropName="TICKET" msprop:Generator_RowDeletingName="TICKETRowDeleting" msprop:Generator_RowChangingName="TICKETRowChanging" msprop:Generator_RowEvHandlerName="TICKETRowChangeEventHandler" msprop:Generator_RowDeletedName="TICKETRowDeleted" msprop:Generator_UserTableName="TICKET" msprop:Generator_RowChangedName="TICKETRowChanged" msprop:Generator_RowEvArgName="TICKETRowChangeEvent" msprop:Generator_RowClassName="TICKETRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VEN_CVE_UN" msprop:Generator_ColumnVarNameInTable="columnVEN_CVE_UN" msprop:Generator_ColumnPropNameInRow="VEN_CVE_UN" msprop:Generator_ColumnPropNameInTable="VEN_CVE_UNColumn" msprop:Generator_UserColumnName="VEN_CVE_UN" type="xs:int" />
+              <xs:element name="VEN_CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnVEN_CANTIDAD" msprop:Generator_ColumnPropNameInRow="VEN_CANTIDAD" msprop:Generator_ColumnPropNameInTable="VEN_CANTIDADColumn" msprop:Generator_UserColumnName="VEN_CANTIDAD" type="xs:int" />
+              <xs:element name="CLI_RFC_CLIENTES" msprop:Generator_ColumnVarNameInTable="columnCLI_RFC_CLIENTES" msprop:Generator_ColumnPropNameInRow="CLI_RFC_CLIENTES" msprop:Generator_ColumnPropNameInTable="CLI_RFC_CLIENTESColumn" msprop:Generator_UserColumnName="CLI_RFC_CLIENTES">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLI_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnCLI_NOMBRE" msprop:Generator_ColumnPropNameInRow="CLI_NOMBRE" msprop:Generator_ColumnPropNameInTable="CLI_NOMBREColumn" msprop:Generator_UserColumnName="CLI_NOMBRE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLI_PATERNO" msprop:Generator_ColumnVarNameInTable="columnCLI_PATERNO" msprop:Generator_ColumnPropNameInRow="CLI_PATERNO" msprop:Generator_ColumnPropNameInTable="CLI_PATERNOColumn" msprop:Generator_UserColumnName="CLI_PATERNO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLI_TELEFONO" msprop:Generator_ColumnVarNameInTable="columnCLI_TELEFONO" msprop:Generator_ColumnPropNameInRow="CLI_TELEFONO" msprop:Generator_ColumnPropNameInTable="CLI_TELEFONOColumn" msprop:Generator_UserColumnName="CLI_TELEFONO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLI_EMAIL" msprop:Generator_ColumnVarNameInTable="columnCLI_EMAIL" msprop:Generator_ColumnPropNameInRow="CLI_EMAIL" msprop:Generator_ColumnPropNameInTable="CLI_EMAILColumn" msprop:Generator_UserColumnName="CLI_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ART_CVE_ARTICULOS" msprop:Generator_ColumnVarNameInTable="columnART_CVE_ARTICULOS" msprop:Generator_ColumnPropNameInRow="ART_CVE_ARTICULOS" msprop:Generator_ColumnPropNameInTable="ART_CVE_ARTICULOSColumn" msprop:Generator_UserColumnName="ART_CVE_ARTICULOS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ART_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnART_NOMBRE" msprop:Generator_ColumnPropNameInRow="ART_NOMBRE" msprop:Generator_ColumnPropNameInTable="ART_NOMBREColumn" msprop:Generator_UserColumnName="ART_NOMBRE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ART_DESCRIPCION" msprop:Generator_ColumnVarNameInTable="columnART_DESCRIPCION" msprop:Generator_ColumnPropNameInRow="ART_DESCRIPCION" msprop:Generator_ColumnPropNameInTable="ART_DESCRIPCIONColumn" msprop:Generator_UserColumnName="ART_DESCRIPCION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ART_VENT" msprop:Generator_ColumnVarNameInTable="columnART_VENT" msprop:Generator_ColumnPropNameInRow="ART_VENT" msprop:Generator_ColumnPropNameInTable="ART_VENTColumn" msprop:Generator_UserColumnName="ART_VENT" type="xs:decimal" />
+              <xs:element name="total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROV_RFC_PROVEDORES" msprop:Generator_ColumnVarNameInTable="columnPROV_RFC_PROVEDORES" msprop:Generator_ColumnPropNameInRow="PROV_RFC_PROVEDORES" msprop:Generator_ColumnPropNameInTable="PROV_RFC_PROVEDORESColumn" msprop:Generator_UserColumnName="PROV_RFC_PROVEDORES">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROV_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnPROV_NOMBRE" msprop:Generator_ColumnPropNameInRow="PROV_NOMBRE" msprop:Generator_ColumnPropNameInTable="PROV_NOMBREColumn" msprop:Generator_UserColumnName="PROV_NOMBRE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROV_TEL" msprop:Generator_ColumnVarNameInTable="columnPROV_TEL" msprop:Generator_ColumnPropNameInRow="PROV_TEL" msprop:Generator_ColumnPropNameInTable="PROV_TELColumn" msprop:Generator_UserColumnName="PROV_TEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROV_EMAIL" msprop:Generator_ColumnVarNameInTable="columnPROV_EMAIL" msprop:Generator_ColumnPropNameInRow="PROV_EMAIL" msprop:Generator_ColumnPropNameInTable="PROV_EMAILColumn" msprop:Generator_UserColumnName="PROV_EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

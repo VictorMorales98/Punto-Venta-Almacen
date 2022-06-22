@@ -1,0 +1,267 @@
+﻿
+/* Body 
+------------------------------------- */
+body {
+    background: #ffffff;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Typography
+------------------------------------- */
+h1, h2, h3, h4, h5, span {
+    font-weight: bold;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 52px;
+}
+
+h3 {
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    line-height: 33px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    padding-top: 10px;
+}
+
+h5 {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+p {
+    color: #808080;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-color-gray {
+    color: #eeeeee !important;
+}
+
+
+/* All Section styles
+------------------------------------- */
+.section-title {
+    padding-bottom: 62px;
+    position: relative;
+}
+
+.section-btn {
+    background: transparent;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    margin-top: 44px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+    .section-btn:hover {
+        background: #ffffff;
+        border-color: transparent;
+        color: #63c6ae;
+    }
+
+    .section-btn:focus {
+        border-color: transparent;
+        outline: none;
+    }
+
+.btn-warning {
+    background: #63c6ae;
+    border-color: transparent;
+}
+
+.icon {
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+#service, #about, #team,
+#portfolio, #blog, #faq, #testimonial, #contact {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#about, #portfolio, #faq, #contact {
+    background: #f9f9f9;
+}
+
+#team, #contact {
+    text-align: center;
+}
+
+.parallax-section {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+
+
+/* preloader styles
+/* ========================================== */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #fff;
+}
+
+.sk-spinner-pulse {
+    width: 40px;
+    height: 40px;
+    background-color: #63c6ae;
+    border-radius: 100%;
+    -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+    animation: sk-pulseScaleOut 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-pulseScaleOut {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-pulseScaleOut {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+/* navigation styles
+/* ========================================== */
+.navbar-default {
+    background: #ffffff;
+    border: none;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+    margin: 0 !important;
+}
+
+    .navbar-default .navbar-brand {
+        color: #505050;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    .navbar-default li {
+        margin: 15px 20px;
+    }
+
+    .navbar-default .navbar-nav li a {
+        color: #606060;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        line-height: 45px;
+        padding: 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar-default .navbar-nav > li a:hover {
+        color: #63c6ae !important;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #606060;
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #63c6ae;
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle {
+        border: none;
+        padding-top: 10px;
+    }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background: #63c6ae;
+            border-color: transparent;
+        }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: transparent;
+        }
+
+
+.buttons-con .action-link-wrap {
+    margin-top: 40px;
+}
+
+    .buttons-con .action-link-wrap a {
+        background: #68c950;
+        padding: 8px 25px;
+        border-radius: 4px;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 14px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 10px
+    }
+
+        .buttons-con .action-link-wrap a:hover {
+            background: #5A5C6C;
+            color: #fff;
+        }
